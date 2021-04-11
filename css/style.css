@@ -1,0 +1,316 @@
+main{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    background: #70735D;
+}
+
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+nav{
+    position: fixed;
+    font-weight: 500;
+    height: 85px;
+    z-index: 10;
+    width: 100%;
+    backdrop-filter: blur(50px);
+}
+
+nav li{
+    display: inline;
+    list-style: none;
+    padding: 5px 10px 10px 10px;
+}
+
+ul{
+    position: absolute;
+    top: 25%;
+    right: 1%;
+    padding: 0;
+    margin: 0;                
+}
+
+a{
+    text-decoration: none;
+    color: #261501;
+    font-size: 170%; 
+    width: 100px;
+}
+
+#logo_nav{
+    float: left;
+    margin: 0.5% 0 0% 1%;
+}
+
+.logo_nav{
+    width: 66px;
+}
+
+#menu{
+    color: #261501;
+}
+
+a:hover{
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgba(38, 32, 1, 0.5);
+    color: #262001;
+}
+
+#logo_nav a:hover{
+    border: 0;
+}
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+.row{
+    padding: 0;
+    margin: 0;
+}
+
+#apresentacao{
+    background: #70735D;
+    width: 100%;
+    font-size: 100%;
+    color: #261501;
+}
+
+#titulo-principal h1{
+    font-size: 750%;    
+    padding-left: 8%;
+    font-weight: 400;
+}
+
+#blocoTexto-a, #blocoTexto-s{
+    margin-top: 2%;
+    text-indent: 2em;
+    font-size: 180%;
+}
+
+#texto-a, #texto-s, #texto-p, #texto-c{
+    flex: 2 0 0;
+    margin-left: 4%;
+}
+
+ #texto-c{
+    margin-right: 26%;
+}
+
+#logo, #foto-sobre{
+    margin-top: 85px;
+    width: 22%;
+}
+
+#logo, #foto-sobre, #carrossel{
+    margin-right: 4%;
+    flex: 0 auto 0;
+}
+
+#portfolio{
+    background: #70735D;
+    height: 970px;
+    width: 100%;
+    font-size: 100%;
+    color: #261501;
+}
+
+#links{
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-55%);
+}
+
+#links img{
+    width: 12.4%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 50%;
+}
+
+#links a:hover{
+    padding-bottom: 2px;
+    border-bottom: 0;
+}
+
+#blocoTexto-p{
+    margin-top: 2%;
+    font-size: 180%;
+}
+
+#carrossel{
+    width: 403px;
+    height: 315px;
+    padding: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 100%;
+}
+
+#sobre{
+    background: #70735D;
+    width: 100%;
+    font-size: 100%;
+    color: #261501;
+}
+
+#foto-sobre img{
+    border-radius: 50%;
+}
+
+#contato{
+    background: #70735D;
+    width: 100%;
+    font-size: 100%;
+    color: #261501;
+}
+
+#blocoTexto-c{
+    margin-top: 2%;
+    font-size: 100%;
+}
+
+
+
+@media (max-width: 1445px){
+    #titulo-principal h1{
+        font-size: 750%;
+    }
+    #blocoTexto-a{
+        font-size: 170%;
+    }
+     #blocoTexto-s, #bloco-p{
+        font-size: 160%;
+    }
+}
+
+@media (max-width: 1320px){
+    #titulo-principal h1{
+        font-size: 525%;
+    }
+    #blocoTexto-a, #blocoTexto-s, #blocoTexto-p{
+        font-size: 126%;
+    }
+    #blocoTexto-c{
+        font-size: 70%;
+    }
+    
+    #foto-sobre{
+        margin-top: 0;
+        width: 22%;
+    }
+    
+    #links{
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-55%);
+    } 
+}
+
+@media (max-width: 1200px){
+    #titulo-principal h1{
+        font-size: 525%;
+    }
+    #blocoTexto-a, #blocoTexto-s, #blocoTexto-p{
+        font-size: 126%;
+    }
+    #blocoTexto-c{
+        font-size: 70%;
+    }
+    
+    #logo, #foto-sobre{
+        margin-top: 0%;
+        width: 35%;
+    }
+    
+    #logo, #foto-sobre, #carrossel{
+        flex: 1 200px 0;
+        margin-right: 0;
+    }
+    
+    #links{
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-51.5%);
+    } 
+    
+    #links img{
+        width: 12.4%;
+        margin-left: 3%;
+        margin-top: 2%;
+        border-radius: 50%;
+    }
+    
+    #carrossel{
+        margin-top: 2%;
+        width: 403px;
+        height: 315px;
+    }
+    
+    #texto-a, #texto-p{
+        margin-top: 6%;
+        width: auto;
+    }
+    
+    #texto-a, #texto-s, #texto-p, #texto-c{
+        flex: 1 auto;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 0;
+    }
+    
+    #texto-a, #texto-s {
+        margin-top: 85px;
+    }
+    
+    #links{
+        transform: translateX(-52.5%);
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 800px){
+    #logo, #foto-sobre{
+        width: 25%;
+    }
+}
+
+@media (max-width: 780px){
+    body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    
+    #menu{
+        display: none;
+    }
+    
+    #logo_nav{
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        margin: 0;
+    }
+    
+    nav{        
+        backdrop-filter: blur(50px);
+    }
+    
+    #links img{
+        width: 20%;
+        margin-left: 5%;
+        margin-top: 5%;
+        border-radius: 50%;
+    }
+}
